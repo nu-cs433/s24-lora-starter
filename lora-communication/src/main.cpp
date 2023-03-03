@@ -82,9 +82,10 @@ void setup() {
   // spreading factor:            TODO: pick a SF based on your data rate
   // coding rate:                 5 (CR 4/5 for LoRaWAN)
   // sync word:                   0x34 (LoRaWAN sync word)
+  // output power:                0 dBm
   // preamble length:             8 symbols (LoRaWAN preamble length)
   Serial.print("Initializing radio...");
-  int16_t state = radio.begin(TODO, TODO, TODO, 5, 0x34, 8);
+  int16_t state = radio.begin(TODO_FREQ, TODO_BW, TODO_SF, 5, 0x34, 0, 8);
   if (state != RADIOLIB_ERR_NONE) {
       error_message("Radio initializion failed", state);
   }
