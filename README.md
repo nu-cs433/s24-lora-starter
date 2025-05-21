@@ -1,1 +1,1 @@
-# nu-397-lab-lora-starter
+# Northwestern CS433 Lab LoRa starter code

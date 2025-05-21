@@ -182,7 +182,7 @@ void loop() {
     
     // transmit packet
     Serial.print("Button pressed! Transmitting...");
-    int16_t state = radio.transmit("CS397 - Hello World!");
+    int16_t state = radio.transmit("CS433 - Hello World!");
     if (state == RADIOLIB_ERR_NONE) {
       Serial.println("Complete!");
     } else if (state == RADIOLIB_ERR_PACKET_TOO_LONG) {
